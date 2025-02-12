@@ -1,0 +1,14 @@
+C:\с#\NumMethods\bin\Debug\net9.0\NumMethods.exe
+C:\с#\NumMethods\bin\Debug\net9.0\NumMethods.deps.json
+C:\с#\NumMethods\bin\Debug\net9.0\NumMethods.runtimeconfig.json
+C:\с#\NumMethods\bin\Debug\net9.0\NumMethods.dll
+C:\с#\NumMethods\bin\Debug\net9.0\NumMethods.pdb
+C:\с#\NumMethods\obj\Debug\net9.0\NumMethods.GeneratedMSBuildEditorConfig.editorconfig
+C:\с#\NumMethods\obj\Debug\net9.0\NumMethods.AssemblyInfoInputs.cache
+C:\с#\NumMethods\obj\Debug\net9.0\NumMethods.AssemblyInfo.cs
+C:\с#\NumMethods\obj\Debug\net9.0\NumMethods.csproj.CoreCompileInputs.cache
+C:\с#\NumMethods\obj\Debug\net9.0\NumMethods.dll
+C:\с#\NumMethods\obj\Debug\net9.0\refint\NumMethods.dll
+C:\с#\NumMethods\obj\Debug\net9.0\NumMethods.pdb
+C:\с#\NumMethods\obj\Debug\net9.0\NumMethods.genruntimeconfig.cache
+C:\с#\NumMethods\obj\Debug\net9.0\ref\NumMethods.dll

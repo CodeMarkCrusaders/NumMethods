@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class Program
 {
     static void Main(string[] args)
@@ -10,7 +9,3 @@ class Program
             );
     }
 }
-=======
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
->>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6

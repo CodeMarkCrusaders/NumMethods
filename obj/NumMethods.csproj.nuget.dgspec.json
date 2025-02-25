@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
         "packagesPath": "C:\\Users\\Vouso\\.nuget\\packages\\",
         "outputPath": "c:\\с#\\NumMethods\\NumMethods\\obj\\",
+=======
+    "C:\\с#\\NumMethods\\NumMethods.csproj": {}
+  },
+  "projects": {
+    "C:\\с#\\NumMethods\\NumMethods.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\с#\\NumMethods\\NumMethods.csproj",
+        "projectName": "NumMethods",
+        "projectPath": "C:\\с#\\NumMethods\\NumMethods.csproj",
+        "packagesPath": "C:\\Users\\Vouso\\.nuget\\packages\\",
+        "outputPath": "C:\\с#\\NumMethods\\obj\\",
+>>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +63,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+<<<<<<< HEAD
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -59,6 +74,8 @@
               "version": "[2.9.3, )"
             }
           },
+=======
+>>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6
           "imports": [
             "net461",
             "net462",

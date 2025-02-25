@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,6 +14,17 @@ public interface IMatrix<T> where T: struct {
     public Matrix<T> Transpose();
     public Matrix<T> Invert();
     public double Determinant();
+=======
+public interface IMatrix<T> where T: struct{
+    public Matrix<T> Add(Matrix<T> matrix);
+    public Matrix<T> Substract(Matrix<T> matrix);
+    public Matrix<T> Multiply(Matrix<T> matrix);
+    public Matrix<T> Multiply<P>(P scalar) where P : struct;
+    // public void divide(double scalar);
+    // public void transpose();
+    // public void invert();
+    // public void determinant();
+>>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6
     // public void adjugate();
     // public void cofactor();
     // public void isSymetric();

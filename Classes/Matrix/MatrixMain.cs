@@ -1,5 +1,6 @@
 
 // Определение класса Matrix
+<<<<<<< HEAD
 using System;
 using System.Collections.Generic;
 public enum Val: int{
@@ -21,6 +22,22 @@ public partial class Matrix<T> : IMatrix<T>/*, IEquatable<T>, IComparable<T>, IF
         Accuracy = accuracy;
     }
     public Matrix(List<List<T>> matrix, double accuracy = 1e-4){
+=======
+
+using System.Collections.Generic;
+public partial class Matrix<T> : IMatrix<T> where T: struct{
+
+    private T[,] _matrix;
+    public uint NbLines { get; init; }
+    public uint NbColumns { get; init; }
+
+    public Matrix(uint nbLines, uint nbColumns){
+        _matrix = new T[nbLines, nbColumns];
+        NbLines = nbLines;
+        NbColumns = nbColumns;
+    }
+    public Matrix(List<List<T>> matrix){
+>>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6
         _matrix = new T[matrix.Count, matrix[0].Count];
         for (int i=0; i < matrix.Count; i++){
             if (matrix[i].Count != matrix[0].Count){
@@ -33,6 +50,7 @@ public partial class Matrix<T> : IMatrix<T>/*, IEquatable<T>, IComparable<T>, IF
 
         NbLines = (uint)matrix.Count;
         NbColumns = (uint)matrix[0].Count;
+<<<<<<< HEAD
         Accuracy = accuracy;
     }
     public Matrix(T[,] matrix, double accuracy = 1e-4){
@@ -40,6 +58,13 @@ public partial class Matrix<T> : IMatrix<T>/*, IEquatable<T>, IComparable<T>, IF
         NbLines = (uint)matrix.GetLength(0);
         NbColumns = (uint)matrix.GetLength(1);
         Accuracy = accuracy;
+=======
+    }
+    public Matrix(T[,] matrix){
+        _matrix = (T[,])matrix.Clone();
+        NbLines = (uint)matrix.GetLength(0);
+        NbColumns = (uint)matrix.GetLength(1);
+>>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6
     }
 
     public T this[int row, int col]  // Индексатор для двумерного массива
@@ -47,6 +72,7 @@ public partial class Matrix<T> : IMatrix<T>/*, IEquatable<T>, IComparable<T>, IF
         get => _matrix[row, col];
         private set => _matrix[row, col] = value;
     }
+<<<<<<< HEAD
 
     public T[] this[Val key, int number]  // Индексатор для двумерного массива
     {
@@ -130,4 +156,6 @@ public partial class Matrix<T> : IMatrix<T>/*, IEquatable<T>, IComparable<T>, IF
                 throw new ArgumentException("Invalid key");
         }
     }
+=======
+>>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6
 }

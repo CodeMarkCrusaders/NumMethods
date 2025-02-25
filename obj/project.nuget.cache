@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "FN4ZLiaq3kI=",
   "success": true,
   "projectFilePath": "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
@@ -18,5 +19,11 @@
     "C:\\Users\\Vouso\\.nuget\\packages\\xunit.extensibility.core\\2.9.3\\xunit.extensibility.core.2.9.3.nupkg.sha512",
     "C:\\Users\\Vouso\\.nuget\\packages\\xunit.extensibility.execution\\2.9.3\\xunit.extensibility.execution.2.9.3.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "AvcuDoHjLuk=",
+  "success": true,
+  "projectFilePath": "C:\\с#\\NumMethods\\NumMethods.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6
   "logs": []
 }

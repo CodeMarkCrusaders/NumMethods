@@ -12,6 +12,7 @@ C:\с#\NumMethods\obj\Debug\net9.0\refint\NumMethods.dll
 C:\с#\NumMethods\obj\Debug\net9.0\NumMethods.pdb
 C:\с#\NumMethods\obj\Debug\net9.0\NumMethods.genruntimeconfig.cache
 C:\с#\NumMethods\obj\Debug\net9.0\ref\NumMethods.dll
+<<<<<<< HEAD
 C:\с#\NumMethods\bin\Debug\net9.0\NUnit3.TestAdapter.pdb
 C:\с#\NumMethods\bin\Debug\net9.0\nunit.engine.dll
 C:\с#\NumMethods\bin\Debug\net9.0\nunit.engine.api.dll
@@ -207,3 +208,5 @@ C:\с#\NumMethods\NumMethods\bin\Debug\net9.0\zh-Hant\Microsoft.VisualStudio.Tes
 C:\с#\NumMethods\NumMethods\obj\Debug\net9.0\NumMethods.csproj.Up2Date
 C:\с#\NumMethods\NumMethods\obj\Debug\net9.0\NumMethods.genruntimeconfig.cache
 C:\с#\NumMethods\NumMethods\obj\Debug\net9.0\ref\NumMethods.dll
+=======
+>>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6

@@ -7,6 +7,7 @@
   "targets": {
     ".NETCoreApp,Version=v9.0": {
       "NumMethods/1.0.0": {
+<<<<<<< HEAD
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "17.13.0",
           "xunit": "2.9.3"
@@ -335,6 +336,11 @@
             "fileVersion": "2.9.3.0"
           }
         }
+=======
+        "runtime": {
+          "NumMethods.dll": {}
+        }
+>>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6
       }
     }
   },
@@ -343,6 +349,7 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+<<<<<<< HEAD
     },
     "Microsoft.CodeCoverage/17.13.0": {
       "type": "package",
@@ -434,6 +441,8 @@
       "sha512": "sha512-yMb6vMESlSrE3Wfj7V6cjQ3S4TXdXpRqYeNEI3zsX31uTsGMJjEw6oD5F5u1cHnMptjhEECnmZSsPxB6ChZHDQ==",
       "path": "xunit.extensibility.execution/2.9.3",
       "hashPath": "xunit.extensibility.execution.2.9.3.nupkg.sha512"
+=======
+>>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6
     }
   }
 }

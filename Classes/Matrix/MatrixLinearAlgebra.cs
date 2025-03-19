@@ -27,8 +27,7 @@ public partial class Matrix<T>
         }
 
         return result;
-    }
-    
+    } 
     public double Determinant(){
         if (NbLines != NbColumns) 
             throw new ArgumentException("Matrix must be square");
@@ -46,7 +45,6 @@ public partial class Matrix<T>
 
         return det;
     }
-
     public Matrix<T> Invert(){
         if (NbLines != NbColumns) 
             throw new ArgumentException("Matrix must be square");

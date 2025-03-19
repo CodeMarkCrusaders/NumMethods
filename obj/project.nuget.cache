@@ -1,9 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "FN4ZLiaq3kI=",
+  "dgSpecHash": "9FrdfC9Fdss=",
   "success": true,
-  "projectFilePath": "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
+  "projectFilePath": "C:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vouso\\.nuget\\packages\\microsoft.codecoverage\\17.13.0\\microsoft.codecoverage.17.13.0.nupkg.sha512",
     "C:\\Users\\Vouso\\.nuget\\packages\\microsoft.net.test.sdk\\17.13.0\\microsoft.net.test.sdk.17.13.0.nupkg.sha512",
@@ -19,11 +18,12 @@
     "C:\\Users\\Vouso\\.nuget\\packages\\xunit.extensibility.core\\2.9.3\\xunit.extensibility.core.2.9.3.nupkg.sha512",
     "C:\\Users\\Vouso\\.nuget\\packages\\xunit.extensibility.execution\\2.9.3\\xunit.extensibility.execution.2.9.3.nupkg.sha512"
   ],
-=======
-  "dgSpecHash": "AvcuDoHjLuk=",
-  "success": true,
-  "projectFilePath": "C:\\с#\\NumMethods\\NumMethods.csproj",
-  "expectedPackageFiles": [],
->>>>>>> 8b237687868b2fb6c3bbadcf5d7becfa53f127c6
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

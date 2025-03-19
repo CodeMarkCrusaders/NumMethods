@@ -96,5 +96,54 @@ public partial class Matrix<T>: IMatrix<T> where T: struct{
         return result;
     }
 
-    
+    public Matrix<T> Join(Val key, T[] value, int index){
+        if (index == -1) index = key == Val.Horizontal? (int)NbColumns : (int)NbLines;
+        if (index < 0 && key != Val.Diagonal) {
+            throw new ArgumentException("Index must be greater than or equal to zero");
+        }
+        switch (key){
+            case Val.Vertical:
+                if (value.Length != NbLines) {
+                    throw new ArgumentException("The length of the array must be equal to the number of columns");
+                }
+
+                Matrix<T> result1 = new Matrix<T>(NbLines, NbColumns+1);
+
+                for (int i = 0; i < NbLines; i++) {
+                    for (int j = 0; j < NbColumns+1; j++) {
+                        if (j == index) {
+                            result1[i, j] = value[i];
+                        } else if (j < index) {
+                            result1[i, j] = this[i, j];
+                        } else {
+                            result1[i, j] = this[i, j-1];
+                        }
+                    }
+                }
+                return result1;
+
+            case Val.Horizontal:
+                if (value.Length != NbColumns) {
+                    throw new ArgumentException("The length of the array must be equal to the number of lines");
+                }
+                
+                Matrix<T> result2 = new Matrix<T>(NbLines+1, NbColumns);
+
+                for (int i = 0; i < NbLines+1; i++) {
+                    for (int j = 0; j < NbColumns; j++) {
+                        if (i == index) {
+                            result2[i, j] = value[j];
+                        } else if (i < index) {
+                            result2[i, j] = this[i, j];
+                        } else {
+                            result2[i, j] = this[i-1, j];
+                        }
+                    }
+                }
+                return result2;
+
+            default:
+                throw new ArgumentException("Invalid key");
+        }
+    }
 }

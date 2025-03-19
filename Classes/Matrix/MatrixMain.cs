@@ -2,6 +2,7 @@
 // Определение класса Matrix
 using System;
 using System.Collections.Generic;
+using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Serialization;
 public enum Val: int{
     Diagonal,
     Horizontal,
@@ -93,7 +94,6 @@ public partial class Matrix<T> : IMatrix<T>/*, IEquatable<T>, IComparable<T>, IF
                 throw new ArgumentException("Invalid key");
         }
     }
-
     private Matrix<T> SmartSet(Val key, int number, T[] value){
         switch (key){
             case Val.Diagonal:

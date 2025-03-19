@@ -2,9 +2,6 @@ using System.Diagnostics.CodeAnalysis;
 
 public partial class Matrix<T>{
 
-    private bool IsIntegerMatrix(Matrix<T> matrix) => typeof(T) == typeof(float) || typeof(T) == typeof(double);
-    private bool IsIntegerMatrix(T[,] array) => typeof(T) == typeof(float) || typeof(T) == typeof(double);
-
     public override bool Equals(object? obj)
     {
         if (obj == null) return false;

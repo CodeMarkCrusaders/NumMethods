@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj": {}
+    "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj": {}
   },
   "projects": {
-    "C:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj": {
+    "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
+        "projectUniqueName": "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
         "projectName": "NumMethods",
-        "projectPath": "C:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
+        "projectPath": "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
         "packagesPath": "C:\\Users\\Vouso\\.nuget\\packages\\",
-        "outputPath": "C:\\с#\\NumMethods\\NumMethods\\obj\\",
+        "outputPath": "c:\\с#\\NumMethods\\NumMethods\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

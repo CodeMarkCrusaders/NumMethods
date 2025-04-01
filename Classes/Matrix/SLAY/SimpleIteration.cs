@@ -1,5 +1,3 @@
-using System.Runtime.InteropServices;
-using Xunit.Sdk;
 
 public partial class Matrix<T>{
     public double[] SimpleIteration(T[] X, double eps = 1e-9){

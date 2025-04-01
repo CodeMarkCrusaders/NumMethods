@@ -1,7 +1,7 @@
 public partial class Matrix<T>{
     public double[] Jacobi(T[] X, double eps = 1e-9){
-        if (!this.IsSquare()) throw new ArgumentException("Matrix must be square");
-        if (!IsDiagonallyDominant()) throw new ArgumentException("Matrix must be diagonally dominant for Jacobi method");
+        if (!this.IsSquare()) throw new ArgumentException("Матрица должна быть квадратной");
+        if (!IsDiagonallyDominant()) throw new ArgumentException("Матрица должна быть диагонально доминирующей");
         double[] xPrev = new double[X.Length];
         double[] x = new double[X.Length];
 

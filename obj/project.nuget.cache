@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FN4ZLiaq3kI=",
+  "dgSpecHash": "CZOYrkCqDNw=",
   "success": true,
-  "projectFilePath": "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
+  "projectFilePath": "C:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vouso\\.nuget\\packages\\microsoft.codecoverage\\17.13.0\\microsoft.codecoverage.17.13.0.nupkg.sha512",
     "C:\\Users\\Vouso\\.nuget\\packages\\microsoft.net.test.sdk\\17.13.0\\microsoft.net.test.sdk.17.13.0.nupkg.sha512",

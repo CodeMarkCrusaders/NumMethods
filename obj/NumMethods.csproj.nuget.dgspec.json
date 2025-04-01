@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj": {}
+    "C:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj": {}
   },
   "projects": {
-    "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj": {
+    "C:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
+        "projectUniqueName": "C:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
         "projectName": "NumMethods",
-        "projectPath": "c:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
+        "projectPath": "C:\\с#\\NumMethods\\NumMethods\\NumMethods.csproj",
         "packagesPath": "C:\\Users\\Vouso\\.nuget\\packages\\",
-        "outputPath": "c:\\с#\\NumMethods\\NumMethods\\obj\\",
+        "outputPath": "C:\\с#\\NumMethods\\NumMethods\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -42,9 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

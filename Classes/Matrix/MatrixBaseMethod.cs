@@ -21,7 +21,7 @@ public partial class Matrix<T>: IMatrix<T> where T: struct{
     /// <exception cref="ArgumentException">Выбрасывается, если матрицы не имеют одинаковые размеры.</exception>
     public Matrix<T> Add(Matrix<T> matrix1){
         if (NbLines != matrix1.NbLines || NbColumns != matrix1.NbColumns) {
-            throw new ArgumentException("Matrices must be of the same dimension");
+            throw new ArgumentException("Матрицы должны иметь одинаковые размеры");
         }
 
         for (int i = 0; i < matrix1.NbLines; i++) {
@@ -42,7 +42,7 @@ public partial class Matrix<T>: IMatrix<T> where T: struct{
     /// <exception cref="ArgumentException">Выбрасывается, если матрицы не имеют одинаковые размеры.</exception>
     public Matrix<T> Substract(Matrix<T> matrix1){
         if (NbLines != matrix1.NbLines || NbColumns != matrix1.NbColumns) {
-            throw new ArgumentException("Matrices must be of the same dimension");
+            throw new ArgumentException("Матрицы должны иметь одинаковые размеры");
         }
 
         for (int i = 0; i < matrix1.NbLines; i++) {
@@ -56,7 +56,7 @@ public partial class Matrix<T>: IMatrix<T> where T: struct{
 
     public Matrix<T> Multiply(Matrix<T> matrix1){
         if (NbColumns != matrix1.NbLines) {
-            throw new ArgumentException("Matrices must be of the same dimension");
+            throw new ArgumentException("Матрицы должны иметь одинаковые размеры");
         }
         Matrix<T> result = new Matrix<T>(NbLines, matrix1.NbColumns);
 
@@ -83,7 +83,7 @@ public partial class Matrix<T>: IMatrix<T> where T: struct{
     
     public Matrix<double> Divide<T1>(T1 scalar) where T1: struct{
         if (scalar.Equals(0)) {
-            throw new ArgumentException("Division by zero");
+            throw new ArgumentException("Деление на ноль");
         }
         Matrix<double> result = new Matrix<double>(NbLines, NbColumns);
 
@@ -99,12 +99,12 @@ public partial class Matrix<T>: IMatrix<T> where T: struct{
     public Matrix<T> Join(Val key, T[] value, int index){
         if (index == -1) index = key == Val.Horizontal? (int)NbColumns : (int)NbLines;
         if (index < 0 && key != Val.Diagonal) {
-            throw new ArgumentException("Index must be greater than or equal to zero");
+            throw new ArgumentException("Индекс должен быть больше или равен нулю");
         }
         switch (key){
             case Val.Vertical:
                 if (value.Length != NbLines) {
-                    throw new ArgumentException("The length of the array must be equal to the number of columns");
+                    throw new ArgumentException("Длина массива должна быть равна количеству строк");
                 }
 
                 Matrix<T> result1 = new Matrix<T>(NbLines, NbColumns+1);
@@ -124,7 +124,7 @@ public partial class Matrix<T>: IMatrix<T> where T: struct{
 
             case Val.Horizontal:
                 if (value.Length != NbColumns) {
-                    throw new ArgumentException("The length of the array must be equal to the number of lines");
+                    throw new ArgumentException("Длина массива должна быть равна количеству столбцов");
                 }
                 
                 Matrix<T> result2 = new Matrix<T>(NbLines+1, NbColumns);
@@ -143,7 +143,7 @@ public partial class Matrix<T>: IMatrix<T> where T: struct{
                 return result2;
 
             default:
-                throw new ArgumentException("Invalid key");
+                throw new ArgumentException("Недопустимый параметр");
         }
     }
 }

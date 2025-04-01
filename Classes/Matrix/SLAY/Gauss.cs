@@ -1,6 +1,6 @@
 public partial class Matrix<T>{
     public double[] Gauss(T[] X){
-        if (!this.IsSquare()) throw new ArgumentException("Matrix must be square");
+        if (!this.IsSquare()) throw new ArgumentException("Матрица должна быть квадратной");
         int n = X.Length; 
         // Инициализация рабочих копий: a для коэффициентов и b для правой части.
         double[,] a = new double[n, n];

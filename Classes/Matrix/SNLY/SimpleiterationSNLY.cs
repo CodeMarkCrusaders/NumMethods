@@ -1,6 +1,6 @@
 public partial class Matrix<T>{
     public double[] SimpleIterationSNLY(T[] X, double eps = 1e-9){
-        if (!this.IsSquare()) throw new ArgumentException("Matrix must be square");
+        if (!this.IsSquare()) throw new ArgumentException("Матрица должна быть квадратной");
         double[] xPrev = new double[X.Length];
         double[] x = new double[X.Length];
 

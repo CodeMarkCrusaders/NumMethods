@@ -1,7 +1,7 @@
 
 public partial class Matrix<T>{
     public double[] SimpleIteration(T[] X, double eps = 1e-9){
-        if (!this.IsDiagonallyDominant()) throw new ArgumentException("Matrix must be diagonally dominant to use Simple Iteration method.");
+        if (!this.IsDiagonallyDominant()) throw new ArgumentException("Матрица должна быть диагонально доминирующей");
         double[] xPrev = new double[X.Length];
         double[] x = new double[X.Length];
 
@@ -29,7 +29,7 @@ public partial class Matrix<T>{
     public Matrix<T> MakeDiagonallyDominant(){
         if (this.IsDiagonallyDominant()) return this;
         if (NbLines != NbColumns)
-            throw new ArgumentException("Matrix must be square to be made diagonally dominant.");
+            throw new ArgumentException("Матрица должна быть квадратной");
 
         int n = (int)NbLines;
         int[] permutation = new int[n];
@@ -63,7 +63,7 @@ public partial class Matrix<T>{
         }
 
         if (!FindPermutation(0))
-            throw new Exception("Matrix cannot be made diagonally dominant.");
+            throw new Exception("Невозможно сделать матрицу диагонально доминирующей");
 
         // Create new matrix with rows reordered according to the found permutation.
         T[,] newMatrix = new T[n, n];
@@ -80,8 +80,7 @@ public partial class Matrix<T>{
 
     public bool IsSimpleIterationConvergent()
     {
-        if (NbLines != NbColumns)
-            throw new ArgumentException("Matrix must be square to check convergence.");
+        if (NbLines != NbColumns) throw new ArgumentException("Матрица должна быть квадратной для проверки сходимости.");
 
         int n = (int)NbLines;
         for (int i = 0; i < n; i++)

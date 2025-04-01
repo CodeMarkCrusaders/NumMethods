@@ -2,9 +2,7 @@ public partial class Matrix<T>
 {
 
     public Matrix<T> Minor(int row, int col){
-        if (NbLines != NbColumns) {
-            throw new ArgumentException("Matrix must be square");
-        }
+        if (NbLines != NbColumns) throw new ArgumentException("Матрица должна быть квадратной");
         Matrix<T> result = new Matrix<T>(NbLines - 1, NbColumns - 1);
 
         for (int i = 0; i < NbLines; i++) {
@@ -29,11 +27,9 @@ public partial class Matrix<T>
         return result;
     } 
     public double Determinant(){
-        if (NbLines != NbColumns) 
-            throw new ArgumentException("Matrix must be square");
+        if (NbLines != NbColumns) throw new ArgumentException("Матрица должна быть квадратной");
         
-        if (NbLines == 1) 
-            return (dynamic)this[0, 0];
+        if (NbLines == 1) return (dynamic)this[0, 0];
     
         if (NbLines == 2) 
             return (dynamic)this[0, 0] * (dynamic)this[1, 1] - (dynamic)this[0, 1] * (dynamic)this[1, 0];
@@ -46,12 +42,10 @@ public partial class Matrix<T>
         return det;
     }
     public Matrix<T> Invert(){
-        if (NbLines != NbColumns) 
-            throw new ArgumentException("Matrix must be square");
+        if (NbLines != NbColumns) throw new ArgumentException("Матрица должна быть квадратной");
         
         double det = this.Determinant();
-        if (det == 0) 
-            throw new ArgumentException("Matrix must be regular");
+        if (det == 0) throw new ArgumentException("Матрица вырождена, обратной матрицы не существует");
         
         Matrix<T> result = new Matrix<T>(NbLines, NbColumns);
         for (int i = 0; i < NbLines; i++) {

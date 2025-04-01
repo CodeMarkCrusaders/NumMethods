@@ -125,7 +125,7 @@ public partial class Matrix<T>
     }
 
     public bool IsDiagonallyDominant(){
-        if (NbColumns != NbLines) throw new ArgumentException("Matrix must be square");
+        if (NbColumns != NbLines) throw new ArgumentException("Матрица должна быть квадратной");
 
         for (int i = 0; i < NbLines; i++){
             double[] _dline = Array.ConvertAll(this[Val.Horizontal, i], n => Convert.ToDouble(n));

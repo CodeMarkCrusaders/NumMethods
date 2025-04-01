@@ -1,7 +1,7 @@
 public partial class Matrix<T>{
     
     public (Matrix<double>, Matrix<double>) LUDecomposition(){
-        if (!this.IsSquare()) throw new ArgumentException("Matrix must be square");
+        if (!this.IsSquare()) throw new ArgumentException("Матрица должна быть квадратной");
 
         Matrix<double> L = new Matrix<double>(NbLines, NbColumns);
         Matrix<double> U = new Matrix<double>(NbLines, NbColumns);
@@ -28,7 +28,7 @@ public partial class Matrix<T>{
     }
 
     public double[] SLAYLUDecomposition(T[] X){
-        if (NbColumns != NbLines) throw new ArgumentException("Matrix must be square");
+        if (NbColumns != NbLines) throw new ArgumentException("Матрица должна быть квадратной");
 
         (Matrix<double> L, Matrix<double> U) = LUDecomposition();
         double[] y = new double[NbLines];

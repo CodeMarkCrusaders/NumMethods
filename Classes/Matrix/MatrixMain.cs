@@ -59,7 +59,7 @@ public partial class Matrix<T> : IMatrix<T>/*, IEquatable<T>, IComparable<T>, IF
         switch (key){
             case Val.Diagonal:
                 if ((number <= 0) ? 0 >= NbLines - Math.Abs(number): 0 >= NbColumns - Math.Abs(number))
-                    throw new ArgumentException("Number must be within the bounds of the matrix dimensions");
+                    throw new ArgumentException("Выход за пределы матрицы");
                 
                 T[] diagonal = new T[(number <= 0) ? NbLines - Math.Abs(number): NbColumns - Math.Abs(number)];
                 for (int i = 0; i < diagonal.Length; i++)

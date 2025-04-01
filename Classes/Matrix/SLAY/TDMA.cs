@@ -1,8 +1,8 @@
 public partial class Matrix<T>{
     public double[] TDMA(T[] X)
     {
-        if (!this.IsSquare()) throw new ArgumentException("Matrix must be square");
-        if (!this.IsTridiagonal()) throw new ArgumentException("Matrix must be tridiagonal");
+        if (!this.IsSquare()) throw new ArgumentException("Матрица должна быть квадратной");
+        if (!this.IsTridiagonal()) throw new ArgumentException("Матрица должна быть трёхдиагональной");
 
         double[] a = Array.ConvertAll(new T[1].Concat(this[Val.Diagonal, -1]).ToArray(), n => Convert.ToDouble(n));
         double[] b = Array.ConvertAll(this[Val.Diagonal, 0], n => Convert.ToDouble(n));

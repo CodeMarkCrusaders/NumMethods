@@ -1,5 +1,3 @@
-using System.Xml.Schema;
-
 class Program
 {   
     static void Main(string[] args)

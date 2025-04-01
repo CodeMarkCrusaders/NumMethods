@@ -1,6 +1,6 @@
 public partial class Matrix<T>{
     public double[] Zeidel(T[] X, double eps = 1e-9){
-        if (!this.IsDiagonallyDominant()) throw new ArgumentException("Matrix must be diagonally dominant to use Zeidel method.");
+        if (!this.IsDiagonallyDominant()) throw new ArgumentException("Матрица должна быть диагонально доминирующей");
         double[] xPrev = new double[X.Length];
         double[] x = new double[X.Length];
 
@@ -33,7 +33,7 @@ public partial class Matrix<T>{
     {
         int n = (int)NbLines;
         var A = new double[n, n];
-        // Build full double matrix from _matrix
+        // Строим полную матрицу типа double из _matrix
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < n; j++)
@@ -42,7 +42,7 @@ public partial class Matrix<T>{
             }
         }
         
-        // Build (D+L) and U from A
+        // Строим (D+L) и U из матрицы A
         var lower = new double[n, n];
         var upper = new double[n, n];
         for (int i = 0; i < n; i++)
@@ -61,7 +61,7 @@ public partial class Matrix<T>{
         for (int i = 0; i < n; i++)
         {
             if (Math.Abs(lower[i, i]) < 1e-12)
-                throw new InvalidOperationException("Zero on diagonal while computing inverse.");
+                throw new InvalidOperationException("Ноль на диагонали матрицы, невозможно инвертировать");
             for (int j = 0; j <= i; j++)
             {
                 if (i == j)

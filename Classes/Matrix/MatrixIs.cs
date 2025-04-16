@@ -142,4 +142,8 @@ public partial class Matrix<T>
         
         return true;
     }
+
+    public bool isSNLY(){
+        return _matrix is Func<double, double>[,];
+    }
 }
